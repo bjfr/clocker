@@ -20,7 +20,7 @@ services:
 - type: brooklyn.entity.container.docker.DockerInfrastructure
   brooklyn.config:
     entity.dynamicLocation.name: "my-docker-cloud"
-    docker.version: 1.6.2
+    docker.version: 1.7.0
     docker.tls.certificate: "conf/server-cert.pem"
     docker.tls.key: "conf/server-key.pem"
     docker.host.cluster.initial.size: 2
@@ -38,7 +38,7 @@ services:
       $brooklyn:entitySpec:
         type: brooklyn.networking.sdn.weave.WeaveNetwork
         brooklyn.config:
-          weave.version: 1.0.0
+          weave.version: 1.0.1
     docker.host.spec:
       $brooklyn:entitySpec:
         type: brooklyn.entity.container.docker.DockerHost

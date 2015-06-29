@@ -50,10 +50,10 @@ import com.google.common.collect.ImmutableList;
 public class WeaveDockerCloud extends AbstractApplication {
 
     @CatalogConfig(label="Docker Version", priority=100)
-    public static final ConfigKey<String> DOCKER_VERSION = ConfigKeys.newConfigKeyWithDefault(DockerInfrastructure.DOCKER_VERSION, "1.6.2");
+    public static final ConfigKey<String> DOCKER_VERSION = ConfigKeys.newConfigKeyWithDefault(DockerInfrastructure.DOCKER_VERSION, "1.7.0");
 
     @CatalogConfig(label="Weave Version", priority=90)
-    public static final ConfigKey<String> WEAVE_VERSION = ConfigKeys.newStringConfigKey("weave.version", "Weave SDN version", "1.0.0");
+    public static final ConfigKey<String> WEAVE_VERSION = ConfigKeys.newStringConfigKey("weave.version", "Weave SDN version", "1.0.1");
 
     @CatalogConfig(label="Location Name", priority=80)
     public static final ConfigKey<String> LOCATION_NAME = ConfigKeys.newConfigKeyWithDefault(DockerInfrastructure.LOCATION_NAME.getConfigKey(), "my-docker-cloud");
